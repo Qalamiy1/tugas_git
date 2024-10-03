@@ -51,7 +51,7 @@ border-radius: 10px;
 
                     </div>
                 </div>             
-                </div>
+                </div>  
                 @endforeach
            
         <!-- disini blog yang kanan -->
