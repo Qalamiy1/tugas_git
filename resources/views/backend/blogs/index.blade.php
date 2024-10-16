@@ -10,6 +10,13 @@
     <h1 class="h3 mb-4 text-gray-800">Blog Page</h1>
 
 
+    <a type="submit" class="btn btn-primary btn-user" href="{{route('blog_tambah')}}">
+      tambah
+  </a>  
+    {{-- <a class="nav-link" href="{{ route('tambah_blog') }}">
+      <i class="fas fa-fw fa-tachometer-alt"></i>
+      <span>tambah</span></a> --}}
+
     <table class="table table-bordered align-middle">
         <thead class="table table-hover">
           <tr>
