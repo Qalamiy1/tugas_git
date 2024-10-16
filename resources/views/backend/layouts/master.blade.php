@@ -43,24 +43,19 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="blog.html">
+                <a class="nav-link" href="{{route('ke-backend_blog')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Blog</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="slider.html">
+                <a class="nav-link" href="{{route('ke-backend_slider')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>slide</span></a>
+                    <span>Slide</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="layanan.html">
+                <a class="nav-link" href="{{route('ke-backend_service')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>layanan</span></a>
+                    <span>Service</span></a>
             </li>
 
 

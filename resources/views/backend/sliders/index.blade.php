@@ -5,54 +5,42 @@
  <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">Blog Page</h1>
+    <h1 class="h3 mb-4 text-gray-800">Sliders Page</h1>
 
 
+    
     <table class="table table-bordered align-middle">
+   
         <thead class="table table-hover">
+           
           <tr>
-            <th scope="col">ID Blog</th>
-            <th scope="col">Judul Blog</th>
-            <th scope="col">Descripsi</th>
-            <th scope="col">File</th>
+            <th scope="col">id</th>
+            <th scope="col">title</th>
+            <th scope="col">description</th>
+            <th scope="col">file</th>
             <th scope="col">Aksi</th>
           </tr>
         </thead>
         <tbody>
           <!-- Contoh data, biasanya akan di-loop dari backend -->
+          @foreach($Callslider as $item)
           <tr>
-            <td>1</td>
-            <td>Belajar HTML & CSS</td>
-            <td>ini bloger tentang santri</td>
-            <td>file_html_css.pdf</td>
+            <td>{{$item->id}}</td>
+            <td>{{$item->title}}</td>
+            <td>{{$item->description}}</td>
+            <td><img src="{{$item->file}}"></td>
             <td class="text-center">
               <button class="btn btn-warning btn-sm">Edit</button>
               <button class="btn btn-danger btn-sm">Hapus</button>
             </td>
           </tr>
-          <tr>
-            <td>2</td>
-            <td>Menguasai Bootstrap 5</td>
-            <td>ini bloger tentang santri</td>
-            <td>file_bootstrap.pdf</td>
-            <td class="text-center">
-              <button class="btn btn-warning btn-sm">Edit</button>
-              <button class="btn btn-danger btn-sm">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Panduan JavaScript Dasar</td>
-            <td>ini bloger tentang santri</td>
-            <td>file_javascript.pdf</td>
-            <td class="text-center">
-              <button class="btn btn-warning btn-sm">Edit</button>
-              <button class="btn btn-danger btn-sm">Hapus</button>
-            </td>
-          </tr>
+          @endforeach
+             
           <!-- Tambah baris data blog lainnya -->
         </tbody>
+     
       </table>
+      
 </div>
 <!-- /.container-fluid -->
 
